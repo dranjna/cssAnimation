@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="ani.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        // $("p").hide();
+        $("#hide").hide();
+        $("#show").show();
+      });
+      $("#show").click(function () {
+        // $("p").show();
+        $("#hide").show();
+        $("#show").hide();
+        window.location.reload();
+      });
+    });
+  </script>
+
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="navbar-brand ps-4"> <img src="../css-animations/images/logo.svg" class="img-fluid" alt=""></div>
+        <button id="show" class="btn btn-primary" style="display: none;">X</button>
+        <button id="hide" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        </p>
+        <div class="menu-items collapse" id="collapseExample">
+          <div class="background-color row py-5">
+            <div class="col-5">
+              <ul>
+                <li class="">
+                  <div class="btn-group dropend ">
+                    <button type="button" class="btn  dropdown-toggle menu-item1" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      About Us
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="drop1">about</a></li>
+                      <li><a href="#" class="drop2">blogs</a></li>
+                      <li><a href="#" class="drop3">portfolio</a></li>
+                      <li><a href="#" class="drop4">contact</a></li>
+                    </ul>
+                  </div>
+
+                </li>
+
+                <li>
+                  <div class="btn-group dropend ">
+                    <button type="button" class="btn  dropdown-toggle menu-item2" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      What we do
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="drop1">about</a></li>
+                      <li><a href="#" class="drop2">blogs</a></li>
+                      <li><a href="#" class="drop3">portfolio</a></li>
+                      <li><a href="#" class="drop4">contact</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="btn-group dropend ">
+                    <button type="button" class="btn  dropdown-toggle menu-item3" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Our Commitments
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="drop1">about</a></li>
+                      <li><a href="#" class="drop2">blogs</a></li>
+                      <li><a href="#" class="drop3">portfolio</a></li>
+                      <li><a href="#" class="drop4">contact</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="btn-group dropend ">
+                    <button type="button" class="btn  dropdown-toggle menu-item4" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      InSights
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="drop1">about</a></li>
+                      <li><a href="#" class="drop2">blogs</a></li>
+                      <li><a href="#" class="drop3">portfolio</a></li>
+                      <li><a href="#" class="drop4">contact</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div class=" dropend btn-group">
+                    <button type="button" class="btn dropdown-toggle menu-item5" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                     Careers
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="drop1">about</a></li>
+                      <li><a href="#" class="drop2">blogs</a></li>
+                      <li><a href="#" class="drop3">portfolio</a></li>
+                      <li><a href="#" class="drop4">contact</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-7">
+              <div class="row py-5" style="background-color:ghostwhite ;">
+                <div class="col-6 ">
+                  <img src="./images/caro1.png" class="img-item" alt="">
+                  <h1 class="item-h1 py-2">Goldman Sachs 2021 Sustainability Report: Progress Through Performance</h1>
+                </div>
+                <div class="col-6 ">
+                  <img src="./images/caro1.png" class="img-item" alt="">
+                  <h1 class="item-h1 py-2">Patrick Cantlay</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+  
+  <div class="road">
+    <img src="./images/car2.png" class="img-fluid car" alt="">
+    <img src="./images/scooter.png" class="img-fluid scooter" alt="">
+  </div>
+  <div class="background py-2">
+    <h1>Coming Soon ! </h1>
+    <div><ul>
+      <li>L</li>
+      <li>I</li>
+      <li>G</li>
+      <li>H</li>
+      <li>T</li>
+      <li>I</li>
+      <li>N</li>
+      <li>G</li>
+    </ul></div>
+    <div class="loading"></div>
+    <div class="my-4"><button class="shaking-btn px-2 py-2">Shaking button</button>
+      <button class="red-bg px-2 py-2">Red mover bg</button></div>
+     </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </html>

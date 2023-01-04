@@ -1,0 +1,530 @@
+
+body{
+    perspective: 200px;
+}
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    justify-content: flex-start !important;
+}
+
+.nav-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.menu-items ul li {
+    list-style: none;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+.dropend .dropdown-toggle::after{
+    /* margin-left: 8.255em !important; */
+}
+
+.navbar .menu-items {
+    /* padding-top: 120px; */
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    /* transform: translateY(-150%); */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -40px;
+    padding-left: 50px; */
+    transition: transform 1s ease-in-out;
+    text-align: center;
+    color: transparent;
+}
+.btn-group{
+    /* border-right: 1px solid gainsboro; */
+    border-radius: 0 !important;
+    padding: 2px;
+}
+.navbar .menu-items li .btn{
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 0;
+    font-weight: 300;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: monospace;
+    color: transparent;
+}
+.btn{
+    color: transparent;
+}
+.menu-item1 {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: transparent;
+}
+
+.menu-item2 {
+    will-change: auto;
+    animation-name: slidein-1;
+    animation-duration: 3s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    color: transparent;
+    
+}
+
+.menu-item3 {
+    will-change: auto;
+    animation-name: slidein-2;
+    animation-duration: 3s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    color: transparent;
+}
+
+.menu-item4 {
+    will-change: auto;
+    animation-name: slidein-3;
+    animation-duration: 3s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    color: transparent;
+}
+
+.menu-item5 {
+    will-change: auto;
+    animation-name: slidein-4;
+    animation-duration: 3s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    color: transparent;
+}
+
+@keyframes slidein {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+        border-bottom: 1px solid gainsboro !important;
+    }
+
+    100% {
+        /* transform: translateY(-2px); */
+        opacity: 1;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+@keyframes slidein-1 {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+@keyframes slidein-2 {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+@keyframes slidein-3 {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+@keyframes slidein-4 {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+.img-item {
+    opacity: 0;
+    width: 70%;
+    animation-name: image-slide;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.item-h1 {
+    opacity: 0;
+    color: transparent;
+    animation-name: h1-slide;
+    animation-duration: 3s;
+    animation-delay: 2.1s;
+    animation-fill-mode: forwards;
+    font-size: 16px;
+}
+
+@keyframes image-slide {
+    0% {
+
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateX(50px);
+
+    }
+}
+
+@keyframes h1-slide {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        transform: translateX(50px);
+    }
+}
+
+.background-color {
+    background-color: white;
+    animation-name: bg-slide;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes bg-slide {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+    }
+}
+.dropdown-menu{
+    border: 0 !important;
+    padding-left: 46px !important;
+    text-transform: capitalize;
+}
+.drop1{
+    opacity: 0;
+    color: transparent;
+    animation-name: dropdown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.drop2{
+    opacity: 0;
+    color: transparent;
+    animation-name: dropdown;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+.drop3{
+    opacity: 0;
+    color: transparent;
+    animation-name: dropdown;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.drop4{
+    opacity: 0;
+    color: transparent;
+    animation-name: dropdown;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+.dropdown-menu li{
+    animation-name: dropdown-border;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    padding: 7px;
+}
+@keyframes dropdown {
+    0% {
+        /* transform: translateY(-2px); */
+        opacity: 0;
+        color: transparent;
+        transform: translateX(20px);
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        opacity: 1;
+        color: black;
+        transform: translateX(20px);
+    }
+}@keyframes dropdown-border {
+    0% {
+        /* transform: translateY(-2px); */
+       
+      color: transparent;
+        
+    }
+
+    100% {
+        color: black;
+        transform: translateX(20px);
+        border-bottom: 1px solid gainsboro;
+    }
+}
+.vl {
+    border-left: 6px solid green;
+    height: 20px;
+  }
+
+  .background {
+    background-color: green;
+   height: auto;
+    padding: 0; 
+    margin: 0;
+    text-align:-webkit-center;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+    0 2px 0 #efefef,
+    0 3px 0 #efefef,
+    0 4px 0 #efefef,
+    0 30px 5px rgba(0,0,0,.1);
+    animation: float 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes float{
+from{
+    transform: rotate(5deg);
+   }
+to{
+    transform: rotate(-5deg);
+}
+}
+.loading{
+    width:100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    animation: loading 3s linear infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotateX(0) rotateY(0);
+    }
+    50%{
+        transform: rotateX(0) rotateY(180deg);
+    }
+    100%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+.road{
+    background: url(./images/city1.jpg);
+    height: 100vh;
+   background-repeat: no-repeat;
+ /* background-size: contain; */
+    background-position: bottom left;
+    animation: driving 10s linear infinite;
+    animation-fill-mode: both;
+}
+.car{
+    position: absolute;
+    left: 300px;
+    bottom: 427px;
+    width: 205px;
+}
+.scooter{
+    position: absolute;
+    left: 700px;
+    bottom: 339px;
+    width: 208px;
+}
+
+
+
+@keyframes driving{
+    from{
+        background-position: bottom left;
+    }
+    to{
+        background-position: bottom right;
+    }
+}
+.shaking-btn{
+    border: 2px solid #fff ;
+    color: #FFF;
+    background-color: transparent;
+    font-size: 16px;
+    transition: all 0.3s ;
+}
+.shaking-btn:hover{
+    animation: shake-btn 0.3s linear 1;
+    color: black;
+    border: 2px solid black;
+  
+}
+@keyframes shake-btn{
+    33%{
+        transform: rotate(10deg);
+    }
+    66%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+.red-bg{
+    border: 2px solid #fff ;
+    color: #FFF;
+    background-color: transparent;
+    font-size: 16px;
+    transition: all 0.3s ;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.red-bg:hover::before{
+   width: 100%;
+   transform: skew(0deg);
+   animation: none;
+  background-color: red;
+}
+.red-bg::before{
+    content: "";
+    background-color: red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    z-index: -1;
+  transform: skew(-35deg);
+  animation: red-mover 1.2s linear infinite;
+}
+@keyframes red-mover{
+   from{
+        left: -40px;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+ ul{
+    display: flex;
+    
+    justify-content: center;
+   
+}
+ ul li{
+    list-style: none;
+    color: #484848;
+    letter-spacing: 15px;
+    font-size: 50px;
+    font-weight: 600;
+    animation: lighting 1s linear infinite ;
+}
+@keyframes lighting{
+    0%{
+        color: #484848;
+        text-shadow: none;
+     }
+     90%{
+        color: #484848;
+        text-shadow: none;
+     }
+     100%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+     }
+ }
+ ul li:nth-child(1){
+    animation-delay:0s;
+ }
+ ul li:nth-child(2){
+    animation-delay:0.1s;
+ }
+ ul li:nth-child(3){
+    animation-delay:0.3s;
+ }
+ ul li:nth-child(4){
+    animation-delay:0.4s;
+ }
+ ul li:nth-child(5){
+    animation-delay:0.6s;
+ }
+ ul li:nth-child(6){
+    animation-delay:0.7s;
+ }
+ ul li:nth-child(7){
+    animation-delay:0.8s;
+ }
+ ul li:nth-child(8){
+    animation-delay:0.9s;
+ }
